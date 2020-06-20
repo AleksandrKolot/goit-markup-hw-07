@@ -21,6 +21,27 @@ p {
   margin: 0;
 }
 
+.public, .list-nav, .contacts, .list-button, .list-portfolio {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mail, .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  color: #757575;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -46,34 +67,6 @@ p {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-
-.main-title {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.public, .list-nav, .contacts, .list-button, .list-portfolio {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.mail, .phone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 500;
-  color: #757575;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -149,7 +142,6 @@ p {
 }
 
 .public .item {
-  /* width: auto; */
   -webkit-box-shadow: none;
           box-shadow: none;
 }

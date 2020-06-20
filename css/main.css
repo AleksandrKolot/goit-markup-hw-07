@@ -21,6 +21,45 @@ p {
   margin: 0;
 }
 
+.advantages, .work, .team, .clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list-nav, .contacts, .list-advantages, .list-work, .list-team, .public, .list-clients {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mail, .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  color: #757575;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work-title, .team-title, .clients-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.advantages-title, .work .name-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -46,45 +85,6 @@ p {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-
-.main-title {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.advantages, .work, .team, .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.public, .list-nav, .contacts, .list-advantages, .list-work, .list-team, .list-clients {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.mail, .phone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 500;
-  color: #757575;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.advantages-title, .work-title {
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
 }
 
 .logo {
@@ -147,60 +147,6 @@ p {
 
 .footer .subscribe .button .send-icon {
   margin-left: 10px;
-}
-
-.public {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 24px;
-}
-
-.public .item {
-  /* width: auto; */
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.public .item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.public .link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  border: none;
-  border-radius: 50%;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.public .link:focus, .public .link:hover {
-  background-color: #2196F3;
-}
-
-.public-icon {
-  fill: #AFB1B8;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.public .link:focus .public-icon,
-.public .link:hover .public-icon {
-  fill: #F5F4FA;
 }
 
 .header-bar {
@@ -630,7 +576,7 @@ p {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.work-title {
+.work .name-title {
   position: absolute;
   text-align: center;
   width: 100%;
@@ -645,7 +591,7 @@ p {
   background-color: #F5F4FA;
 }
 
-.team-title {
+.team .name-title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -672,8 +618,6 @@ p {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-  /* border-radius: 4px;
-    overflow: hidden; */
 }
 
 .list-team .item:not(:last-child) {
@@ -683,6 +627,60 @@ p {
 .team-image {
   display: block;
   margin-bottom: 30px;
+}
+
+.public {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 24px;
+}
+
+.public .item {
+  /* width: auto; */
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.public .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.public .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.public .link:focus, .public .link:hover {
+  background-color: #2196F3;
+}
+
+.public-icon {
+  fill: #AFB1B8;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.public .link:focus .public-icon,
+.public .link:hover .public-icon {
+  fill: #F5F4FA;
 }
 
 .list-clients {

@@ -3,6 +3,9 @@
 .work {
   @extend %indent;
 }
+.work-title {
+  @extend %main-title;
+}
 .list-work {
   display: flex;
   @extend %list;
@@ -17,9 +20,9 @@
     margin-right: 30px;
   }
 }
-  .list-work .picture {
-    display: block;
-  }
+.list-work .picture {
+  display: block;
+}
 
 .title-box {
   position: absolute;
@@ -28,7 +31,7 @@
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.work-title {
+.work .name-title {
   position: absolute;
   text-align: center;
 

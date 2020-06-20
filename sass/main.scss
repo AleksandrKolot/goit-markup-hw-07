@@ -1,14 +1,14 @@
 
+// общий шрифт, цвет обнуляющие стили
 @import "./utils/variables";
+
+// общие стили
 @import "./utils/placeholders";
-// @import "./components/header";
+
+// главный размер сайта 
+@import "./components/container";
 
 // root цвета
-
-// /* html {
-//   box-sizing: border-box;
-// } */
-
 // утилита body
 // утилита на cсылки
 // утилита на заголовки
@@ -17,19 +17,17 @@
 // утилита отступ в секциях indent 
 // утилита на h2 main-title
 
+// отступ в секциях
+// плейсхолдер на cтили ссылок mail phone
 // плейсхолдер на список list
+// плейсхолдер на h2 direct-title
 // плейсхолдер на h3 direct-title
-
 
 // компонент logo
 @import "./components/logo";
 
 // компонент button
 @import "./components/button";
-
-// список ссылок на соц сети public
-@import "./components/public_list";
-
 
 // компонент header
 @import "./components/header";

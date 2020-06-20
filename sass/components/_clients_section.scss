@@ -4,6 +4,10 @@
   @extend %indent;
 }
 
+.clients-title {
+  @extend %main-title;
+}
+
 .list-clients {
   display: flex;
   @extend %list;

@@ -1,8 +1,12 @@
 
-
+// общий шрифт, цвет обнуляющие стили
 @import "./utils/variables";
+
+// общие стили
 @import "./utils/placeholders";
 
+// главный размер сайта 
+@import "./components/container";
 
 // компонент logo
 @import "./components/logo";
