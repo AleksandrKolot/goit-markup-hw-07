@@ -28,6 +28,7 @@
 .list-nav{
   display: flex;
   margin-left: 85px;
+  @extend %list;
 
   & .item:not(:last-child) {
     margin-right: 50px;
@@ -36,6 +37,7 @@
 .contacts {
   display: flex;
   margin-left: auto;
+  @extend %list;
 
   & .item:not(:last-child) {
     margin-right: 30px;
@@ -59,16 +61,7 @@
   }
 }
 
-%mail-phone-style {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  color:  $primary-text-color;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .mail {
  @extend %mail-phone-style;
 

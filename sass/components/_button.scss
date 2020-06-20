@@ -20,4 +20,15 @@
   &:focus, &:hover  {
     background-color: #1489e9;
   }
+
+  .footer .subscribe & {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 29px;
+    margin-left: -4px;
+  
+    & .send-icon {
+      margin-left: 10px;
+    }
+  }
 }
